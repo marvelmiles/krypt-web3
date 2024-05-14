@@ -26,6 +26,8 @@ module.exports = {
     "comma-dangle": 0,
     "no-console": 0,
     "no-alert": 0,
+    "consistent-return": 0,
+    radix: 0,
     "no-multiple-empty-lines": [
       "error",
       {
@@ -33,12 +35,10 @@ module.exports = {
         maxEOF: 1,
       },
     ],
-    "no-underscore-dangle": [
-      "error",
-      {
-        allow: ["_d", "_dh", "_h", "_id", "_m", "_n", "_t", "_text"],
-      },
-    ],
+    "nonblock-statement-body-position": 0,
+    curly: 0,
+    "implicit-arrow-linebreak": 0,
+    "no-underscore-dangle": 0,
     "object-curly-newline": 0,
     "react/jsx-filename-extension": 0,
     "react/jsx-one-expression-per-line": 0,
@@ -47,6 +47,7 @@ module.exports = {
     "jsx-a11y/no-autofocus": 0,
     "jsx-a11y/no-static-element-interactions": 0,
     "react/no-array-index-key": 0,
+    // "react-hooks/exhaustive-deps": 1,
     "jsx-a11y/anchor-is-valid": [
       "error",
       {
