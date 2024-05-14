@@ -44,6 +44,10 @@ const Welcome = () => {
       await sendTransaction();
 
       e.target.reset();
+
+      toast.success(
+        "Transaction succesful! Scroll down for Your Latest Transactions"
+      );
     } catch (err) {
       console.log(err);
       toast.error(err.message);
