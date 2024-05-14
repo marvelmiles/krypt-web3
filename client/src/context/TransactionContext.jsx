@@ -85,12 +85,13 @@ export const TransactionsProvider = ({ children }) => {
     }
   };
 
-  const connectWallet = async (
-    config = {
-      method: "eth_requestAccounts",
-    }
-  ) => {
+  const connectWallet = async (config) => {
     try {
+      if (typeof config.method !== "string")
+        config = {
+          method: "eth_requestAccounts",
+        };
+
       setIsFetchingAcc(true);
 
       if (!ethereum) return alert("Please install MetaMask.");
